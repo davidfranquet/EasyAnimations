@@ -6,17 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
-    <Button
+    <mehdi.sakout.fancybuttons.FancyButton
         android:id="@+id/goToDetail"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
+        android:layout_margin="10dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:lines="1"
+        android:maxLines="1"
+        android:minHeight="0dp"
+        android:minLines="1"
+        android:padding="0dp"
         android:text="Go to Detail"
+        android:textStyle="bold"
         android:transitionName="buttonTransition"
+        app:fb_defaultColor="@color/colorPrimary"
+        app:fb_focusColor="#049183"
+        app:fb_radius="2dp"
+        app:fb_textColor="#ffffff"
+        app:fb_textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
