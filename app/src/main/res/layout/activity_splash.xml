@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootConstraint"
@@ -14,7 +13,6 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:alpha="1"
@@ -41,20 +39,46 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:gravity="center"
+        android:padding="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent">
 
         <TextView
+            android:id="@+id/companyName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:alpha="0"
             android:fontFamily="@font/karla_bold"
+            android:gravity="center"
             android:text="We Are Mobile First!"
             android:textColor="@android:color/white"
-            android:textSize="30dp" />
+            android:textSize="30dp"
+            tools:alpha="1" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:alpha="0"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            tools:alpha="1" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:alpha="0"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            tools:alpha="1" />
 
 
     </LinearLayout>
