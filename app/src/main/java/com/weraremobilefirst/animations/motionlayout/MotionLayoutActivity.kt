@@ -8,6 +8,6 @@ class MotionLayoutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_motion_layout)
+        setContentView(R.layout.activity_motion_layout_final)
     }
 }

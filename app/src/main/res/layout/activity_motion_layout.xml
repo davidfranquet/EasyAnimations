@@ -6,15 +6,18 @@
     android:layout_height="match_parent"
     android:id="@+id/motionLayout"
     android:background="@android:color/white"
-    app:layoutDescription="@xml/motion_layout_scene_2"
+    app:layoutDescription="@xml/motion_layout_scene_example"
     tools:showPaths="true"
     tools:context=".motionlayout.MotionLayoutActivity">
 
     <ImageView
-        android:id="@+id/button"
+        android:id="@+id/logoImage"
         android:layout_width="64dp"
         android:layout_height="64dp"
+        android:layout_marginStart="8dp"
         android:src="@drawable/logo"
-        android:text="Button" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.motion.MotionLayout>
