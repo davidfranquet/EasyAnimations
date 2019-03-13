@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@layout/profile_motion_layout_end"
+        app:constraintSetStart="@layout/profile_motion_layout"
+        app:duration="500"
+        motion:interpolator="linear">
+
+        <OnSwipe
+            app:dragDirection="dragUp"
+            app:touchAnchorId="@id/scrollableContent"
+            app:touchAnchorSide="top" />
+
+        <KeyFrameSet>
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.40"
+                motion:target="@+id/logoImage" />
+
+            <KeyAttribute
+                android:scaleX="2"
+                android:scaleY="2"
+                motion:framePosition="50"
+                motion:target="@id/logoImage" />
+
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="-0.10"
+                motion:target="@+id/sun" />
+
+            <KeyPosition
+                motion:framePosition="50"
+                motion:keyPositionType="parentRelative"
+                motion:percentY="0.80"
+                motion:target="@+id/title" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                motion:framePosition="10"
+                motion:target="@id/title" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                motion:framePosition="99"
+                motion:target="@id/title" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                motion:framePosition="10"
+                motion:target="@id/logoImage" />
+
+            <KeyAttribute
+                android:rotationX="60"
+                motion:framePosition="90"
+                motion:target="@id/logoImage" />
+
+
+        </KeyFrameSet>
+
+    </Transition>
+
+</MotionScene>
