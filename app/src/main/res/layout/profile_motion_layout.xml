@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorAccentAlpha"
     android:fitsSystemWindows="false"
-    app:layoutDescription="@xml/motion_layout_appbar_scene_final">
+    app:layoutDescription="@xml/motion_layout_profile_scene">
 
 
     <View
